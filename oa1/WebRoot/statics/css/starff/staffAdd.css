@@ -1,0 +1,31 @@
+.search{
+	margin: 20px;
+	width:90%;
+	height:100%;
+	border: 1px solid #aed0ea;
+}
+.search > form{
+	padding-left:20px;
+	line-height: 40px;
+	font-size: 16px;
+	margin-left: 20%;
+}
+.search input[type=text], .search select{
+	background-color: #F8FBFE;
+	width: 200px;
+	height:25px;
+	border-radius: 3px;
+	/*border-top:none ;*/
+}
+#userPic{
+	width: 200px;
+	height: 200px;
+	/*background: #0052A3;*/
+	position: absolute;
+	top: 80px;
+	left: 50%;
+}
+
+.fanghui{
+	margin-left: 45%;
+}

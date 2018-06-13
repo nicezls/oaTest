@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#footer-sec {
+			    background-color:#000;
+			    padding:20px 50px;
+			    color:#fff;
+			    font-size:12px;
+			    text-align: center;
+			}
+			#footer-sec a {
+			    color:#fff;
+			}
+			#footer-sec a:hover,a:focus {
+			    color:#fff;
+			    text-decoration:none;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		
+		<button id="btn" value="123">btn</button>
+		<form action="" method="get"></form>	
+		<div id="footer-sec">
+	        Copyright &copy; 2018.Company name All rights reserved.More Templates <a href="#" target="_blank" title="OA TEAM">OA TEAM</a> 
+	    </div>
+	</body>
+	<script type="text/javascript" src="../statics/js/jquery-1.11.2.min.js" ></script>
+	<script>
+		$(function(){
+			$("#btn").click(function(){
+				var bb = $("#btn").val();
+				alert(bb);
+			})
+		})
+	</script>
+</html>

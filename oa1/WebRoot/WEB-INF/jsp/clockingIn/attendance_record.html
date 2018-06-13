@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>考勤记录</title>
+		<link rel="stylesheet" href="../../statics/css/clockingIn/clockingIn.css" />
+		<link rel="stylesheet" href="../../statics/css/bootstrap.css" />
+		<script type="text/javascript" src="../../statics/js/jquery-1.11.2.min.js" ></script>
+		<script type="text/javascript" src="../../statics/js/time.js" ></script>
+		<script type="text/javascript" src="../../statics/js/clockingIn/clockingIn.js" ></script>
+		<script type="text/javascript" src="../../statics/js/calendar/WdatePicker.js" ></script>
+		<script language="javascript">
+			
+		 </script>
+	</head>
+	<body>
+		 <div class="attendance_record-box">
+			<h3>考勤记录</h3>
+			<div class="search">
+				<form method="get" action="">
+					<span>时间：</span> <input type="text" Class="Wdate" id="start-date" name="attendance-start-date" value="${attendance-start-date}"	readonly="readonly" onclick="WdatePicker();"/>
+					-
+					<span></span> <input type="text" Class="Wdate" id="end-date" name="attendance-end-date" value="${attendance-end-date }" readonly="readonly" onclick="WdatePicker();"/>
+					
+					<input type="button" value="查找" class="btn btn-primary"/>
+				</form>
+			</div>
+		
+			<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>日期</th>
+			 		<th>早上签到</th>
+			 		<th>中午下班</th>
+			 		<th>中午签到</th>
+			 		<th>下午下班</th>
+			 		<th>加班签到</th>
+			 		<th>加班下班</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>日期(2018-1-18+星期几)</td>
+					<td>正常上班时间07.30----</td>
+					<td>正常下班时间07.30----</td>
+					<td>日期(2018-1-18+星期几)</td>
+					<td>正常上班时间07.30----</td>
+					<td>正常下班时间07.30----</td>
+					<td>正常下班时间07.30----</td>
+				</tr>
+				
+			</tbody>
+				
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../statics/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../statics/css/proclamation/proclamationManage.css" />
+	</head>
+	<body>
+	<div class="mation">
+		<table class="table table-bordered">
+		  <tr>
+		  	<th class="th_with1">选择</th>
+		  	<th class="th_with1">序号</th>
+		  	<th class="th_with1">状态</th>
+		  	<th class="th_with2">时间</th>
+		  	<th class="th_with2">主题</th>
+		  	<th>内容</th>
+		  </tr>
+		  <tr>
+		  	<td><input type="checkbox" /></td>
+		  	<td>1</td>
+		  	<td>待发布</td>
+		  	<td>2018-6-3 2:00</td>
+		  	<td>紧急通知</td>
+		  	<td>国庆节即将到来，请各部门安排好加班准备，公司没有假期！！！！！！！</td>
+		  </tr>
+		  <tr>
+		  	<td><input type="checkbox" /></td>
+		  	<td>2</td>
+		  	<td>已发布</td>
+		  	<td>2018-6-3 2:00</td>
+		  	<td>紧急通知</td>
+		  	<td>国庆节即将到来，请各部门安排好加班准备，公司没有假期！！！！！！！</td>
+		  </tr>
+		  <tr>
+		  	<td><input type="checkbox" /></td>
+		  	<td>3</td>
+		  	<td>退回发布</td>
+		  	<td>2018-6-3 2:00</td>
+		  	<td>紧急通知</td>
+		  	<td>国庆节即将到来，请各部门安排好加班准备，公司没有假期！！！！！！！</td>
+		  </tr>
+		  <tr>
+		  	<td><input type="checkbox" /></td>
+		  	<td>4</td>
+		  	<td>待发布</td>
+		  	<td>2018-6-3 2:00</td>
+		  	<td>紧急通知</td>
+		  	<td>国庆节即将到来，请各部门安排好加班准备，公司没有假期！！！！！！！</td>
+		  </tr>
+		</table>
+
+			<div class="button_div">
+				<div class="button_left">
+					
+					<nav aria-label="Page navigation">
+					  <ul class="pagination">
+					    <li>
+					      <a href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li>
+					      <a href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+					</nav>
+
+				</div>
+				<div="button_right">
+					<button type="button" class="btn btn-default">删除（选中）</button>
+					<!--发布公告按钮-->
+					<button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">发布/查看公告</button>
+				</div>
+			</div>
+			
+			<!--发布公告-->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="exampleModalLabel">发布公告</h4>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="form-group">
+			            <label for="recipient-name" class="control-label">主题:</label>
+			            <input type="text" class="form-control" id="recipient-name">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="control-label">内容:</label>
+			            <textarea class="form-control" id="message-text"></textarea>
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="control-label">备注:</label>
+			            <textarea class="form-control" id="message-text"></textarea>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+			        <button type="button" class="btn btn-primary">发布</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+			
+			
+	</div>
+		
+		
+		
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../statics/js/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../statics/js/bootstrap.js"></script>
+	</body>
+</html>

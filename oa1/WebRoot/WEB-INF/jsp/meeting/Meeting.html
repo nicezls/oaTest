@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../statics/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../statics/css/meeting/Meeting.css" />
+		<script type="text/javascript" src="../../statics/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="../../statics/js/bootstrap.js"></script>
+		<script type="text/javascript" src="../../statics/js/meeting/Meeting.js"></script>
+	</head>
+
+	<body>
+		<div class="bigdiv">
+			<div class="Meetingnav">
+				<ul>
+					<li class="mom">会议管理</li>
+					<li class="crs">会议室状态</li>
+				</ul>
+			</div>
+			<!--会议管理start-->
+			<div class="Meetingviewone">
+				<a href="addMeeting.html">
+					<div class="Meetingadd"><input type="button" value="添加会议" class="addMeeting" /></div>
+				</a>
+				<form class="fromone">
+					<div class="">
+						会议主题：<input type="text" placeholder="按会议主题搜索" />
+					</div>
+					<div class="">
+						开始日期：<input type="date" placeholder="按开始日期搜索" />
+					</div>
+					<div class="">
+						结束日期：<input type="date" placeholder="按结束时间搜索" />
+					</div>
+					<div class="">
+						参与人：<input type="text" placeholder="按参与人搜索" />
+					</div>
+					<div class="">
+						会议室：<input type="text" placeholder="按会议室搜索" />
+					</div>
+					<div class="">
+						<input type="submit" value="搜索" />
+					</div>
+				</form>
+				<table class="Meetingtable">
+					<tr class="Meetingtr">
+						<th class="Meetingth">序号</th>
+						<th class="Meetingth">会议主题</th>
+						<th class="Meetingth">开始时间</th>
+						<th class="Meetingth">结束时间</th>
+						<th class="Meetingth">参与人</th>
+						<th class="Meetingth">会议室</th>
+						<th class="Meetingth">审核状态</th>
+						<th class="Meetingth">操作</th>
+					</tr>
+					<tr class="Meetingtr">
+						<th class="Meetingth">1</th>
+						<th class="Meetingth">222</th>
+						<th class="Meetingth"> 2014</th>
+						<th class="Meetingth">1015</th>
+						<th class="Meetingth">1233</th>
+						<th class="Meetingth">第一会议室</th>
+						<th class="Meetingth">已结束</th>
+						<th class="Meetingth">
+							<a class="updataMeeting" onclick="updatameeting()" href="#"><i class="glyphicon glyphicon-list-alt"></i></a>
+							<a><i class="glyphicon glyphicon-remove"></i></a>
+						</th>
+					</tr>
+					<tr class="Meetingtr">
+						<th class="Meetingth">1</th>
+						<th class="Meetingth">222</th>
+						<th class="Meetingth"> 2014</th>
+						<th class="Meetingth">1015</th>
+						<th class="Meetingth">1233</th>
+						<th class="Meetingth">第一会议室</th>
+						<th class="Meetingth">已结束</th>
+						<th class="Meetingth">
+							<a><i class="glyphicon glyphicon-list-alt"></i></a>
+							<a><i class="glyphicon glyphicon-remove"></i></a>
+						</th>
+					</tr>
+					<tr class="Meetingtr">
+						<th class="Meetingth">1</th>
+						<th class="Meetingth">222</th>
+						<th class="Meetingth"> 2014</th>
+						<th class="Meetingth">1015</th>
+						<th class="Meetingth">1233</th>
+						<th class="Meetingth">第一会议室</th>
+						<th class="Meetingth">已结束</th>
+						<th class="Meetingth">
+							<a><i class="glyphicon glyphicon-list-alt"></i></a>
+							<a><i class="glyphicon glyphicon-remove"></i></a>
+						</th>
+					</tr>
+					<tr class="Meetingtr">
+						<th class="Meetingth">1</th>
+						<th class="Meetingth">222</th>
+						<th class="Meetingth"> 2014</th>
+						<th class="Meetingth">1015</th>
+						<th class="Meetingth">1233</th>
+						<th class="Meetingth">第一会议室</th>
+						<th class="Meetingth">已结束</th>
+						<th class="Meetingth">
+							<a><i class="glyphicon glyphicon-list-alt"></i></a>
+							<a><i class="glyphicon glyphicon-remove"></i></a>
+						</th>
+					</tr>
+					<tr class="Meetingtr">
+						<th class="Meetingth">1</th>
+						<th class="Meetingth">222</th>
+						<th class="Meetingth"> 2014</th>
+						<th class="Meetingth">1015</th>
+						<th class="Meetingth">1233</th>
+						<th class="Meetingth">第一会议室</th>
+						<th class="Meetingth">已结束</th>
+						<th class="Meetingth">
+							<a><i class="glyphicon glyphicon-list-alt"></i></a>
+							<a><i class="glyphicon glyphicon-remove"></i></a>
+						</th>
+					</tr>
+				</table>
+			</div>
+			<!---->
+			<!--会议室状态start-->
+			<div class="Meetingviewtwo">
+				<table class="Meetingtable">
+					<tr class="Meetingtr">
+						<th class="Meetingth">会议室</th>
+						<th class="Meetingth">会议室状态</th>
+						<th class="Meetingth">操作</th>
+					</tr>
+					<tr class="Meetingtr">
+						<th class="Meetingth">第一会议室</th>
+						<th class="Meetingth">空闲</th>
+						<th class="Meetingth">
+							<a>预定</a>
+						</th>
+					</tr>
+				</table>
+			</div>
+			<!--会议室状态end-->
+		</div>
+	</body>
+
+</html>

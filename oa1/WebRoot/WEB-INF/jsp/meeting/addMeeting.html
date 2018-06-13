@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../statics/css/bootstrap.css" />
+		<link rel="stylesheet" href="../../statics/css/meeting/addMeeting.css" />
+		<script type="text/javascript" src="../../statics/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="../../statics/js/bootstrap.js"></script>
+		<script type="text/javascript" src="../../statics/js/meeting/addMeeting.js"></script>
+	</head>
+
+	<body>
+
+		<div class="addMeetingnav">
+			<ul>
+				<li class="addmom">添加会议</li>
+			</ul>
+		</div>
+		<div class="addMeeting">
+			<form class="addMeetingform" action="">
+				<div>
+					会议主题：<input type="text" class="zhuti" />
+					<span class="zhutispan"></span>
+				</div>
+				<div>
+					开始日期：<input type="date" class="startdate" />
+					<span class="startdatespan"></span>
+				</div>
+				<div>
+					结束日期：<input type="date" class="enddate" />
+					<span class="enddatespan"></span>
+				</div>
+				<div>
+					参与人：<input type="text" class="canyur" />
+					<span class="canyurspan"></span>
+				</div>
+				<div>
+					会议室：
+					<select class="huiyishi">
+						<option value="0">请选择</option>
+						<option value="1">第一会议室</option>
+						<option value="0">第二会议室</option>
+					</select>
+					<span class="huiyishispan"></span>
+				</div>
+				<input type="button" value="添加" />
+				<input type="reset" value="取消" />
+			</form>
+		</div>
+	</body>
+
+</html>

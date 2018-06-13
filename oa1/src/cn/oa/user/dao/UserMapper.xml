@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="cn.oa.user.dao.UserMapper">
+	
+	<select id="getLoginUser" resultType="User">
+		select * from tab_user u 
+		<trim prefix="where" prefixOverrides="and | or">
+			<if test="userNumber != null">
+				and u.userNumber = #{userNumber}
+			</if>
+		</trim>
+	</select>
+	
+	<!-- <select id="getUserById" resultType="User">
+		select * from tab_user u where u.userId = #{userId}
+	</select> -->
+	
+	<update id="modify" parameterType="User">
+		update tab_user
+			<trim prefix="set" suffixOverrides="," suffix="where userId = #{userId}" >
+				<if test="loginSum != null">loginSum=#{loginSum},</if>
+				<if test="userEducation != null">userEducation=#{userEducation},</if>
+				<if test="userPhone != null">userPhone=#{userPhone},</if>
+				<if test="userAddress != null">userAddress=#{userAddress},</if>
+				<if test="userEmail != null">userEmail=#{userEmail},</if>
+				<if test="userCreateDate != null">userCreateDate=#{userCreateDate},</if>
+				<if test="userCreator != null">userCreator=#{userCreator},</if>
+				<if test="userModifier != null">userModifier=#{userModifier},</if>
+				<if test="staffOrUser != null">staffOrUser=#{staffOrUser},</if>
+				<if test="userPic != null">userPic=#{userPic},</if>
+				<if test="status != null">status=#{status},</if>
+				<if test="isExist != null">isExist=#{isExist},</if>
+				<if test="lastLoginTime != null">lastLoginTime=#{lastLoginTime},</if>
+			</trim>		
+	</update>
+	
+</mapper>

@@ -1,0 +1,23 @@
+.yongpin-right{
+	width: 80%;
+	min-height: 560px;
+	/*height: 560px;*/
+	margin: 40px;
+}
+.shenqin-table{
+	border: 1px solid #aed0ea;
+}
+
+
+
+.wupinlie{
+	width: 90%;
+	margin: 0 auto;
+	
+}
+table > thead{
+	background-color: #EEF1F5;
+}
+table > thead td{
+	background-color: #FFFFFF;
+}

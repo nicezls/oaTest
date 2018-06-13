@@ -1,0 +1,103 @@
+.bigdiv{
+	width: 80%;
+	min-width:1200px;
+	margin: 20px;
+}
+
+.Meetingnav{
+	display: block;
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+}
+.Meetingnav>ul>li{
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.Meetingnav>ul>li:nth-child(1){
+	color: black;
+}
+.Meetingnav>ul>li:nth-child(2){
+	color: #7D808D;
+}
+.Meetingtable{
+	margin-top: 20px;
+	width: 100%;
+}
+.Meetingtr{
+	border-top: 0.5px solid black;
+	height: 20px;
+}
+.Meetingtr:hover{
+	cursor:pointer;
+}
+.Meetingtr>th{
+	border:1px solid black;
+}
+.Meetingtr:last-child{
+	border-bottom: 0.5px solid black;
+}
+.Meetingtr>th:nth-child(1){
+	border-left: 1px solid black;
+}
+.Meetingtr>th:last-child{
+	border-right: 1px solid black;
+}
+.Meetingth>a>i{
+	margin-left:20px;
+}
+.Meetingth>a:nth-child(1)>i{
+	margin-left:0px;
+}
+.Meetingth{
+	padding: 10px 5px 10px 2px;
+}
+.Meetingviewone,.Meetingviewtwo,.Meetingviewthree,.Meetingviewfour{
+	margin-top: 20px;
+}
+.Meetingviewtwo{
+	display: none;
+}
+.Meetingviewthree{
+	display: none;
+}
+.Meetingviewfour{
+	display: none;
+}
+/*禁用搜索文本框获取焦点和按钮点击的蓝色边框*/
+.fromone{
+	border:1px solid skyblue;
+}
+.fromone>div{
+	padding: 0;
+}
+.fromone>div,.fromtwo>div,.fromthree>div,.fromfour>div{
+	display: inline-block;
+}
+.fromone>div>input,.fromtwo>div>input,.fromthree>div>input,.fromfour>div>input{
+	outline: none;
+}
+.fromone>div:last-child>input,.fromtwo>div:last-child>input,.fromthree>div:last-child>input,.fromfour>div:last-child>input,{
+	width: 50px;
+	background-color: #3C8DBC;
+}
+/*添加会议按钮*/
+.Meetingadd{
+	float: right;
+}
+.addMeeting{
+	width: 80px;
+	height: 40px;
+	background-color:#3C8DBC;
+	color: white;
+	outline: none;
+}
+.motaikuang>div{
+	margin: 10px  10px 10px 10px;
+}
+.motaikuang>input{
+	width:100px ;
+	height: 30px;
+}

@@ -1,0 +1,8 @@
+
+.mation{width: 80%;margin: 0 auto;}
+.button_div{width: 100%; display: flex; justify-content:space-between}
+.button_left{}
+..button_right{text-align: right;}
+.table tr th,td{text-align: center; align-items: center;}
+.th_with1{width: 8%;}
+.th_with2{width: 14%;}

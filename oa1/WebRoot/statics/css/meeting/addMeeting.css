@@ -1,0 +1,33 @@
+.addMeeting{
+	width: 80%;
+	padding-left: 500px;
+	min-width: 1200px;
+}
+.addMeetingform>div{
+	margin: 20px 20px 20px 20px;
+}
+.addMeetingform>div>input{
+	width:300px;
+	height:40px;
+}
+.addMeetingform>div:nth-child(4)>input,.addMeetingform>div:nth-child(5)>select{
+	margin-left: 10px;
+}
+.addMeetingform>input{
+	background-color: #3C8DBC;
+	margin-left:30px;
+	width: 130px;
+	height: 35px;
+}
+.addMeetingnav{
+	padding-top: 13px;
+	font-size: 20px;
+	width: 80%;
+	height: 50px;
+}
+li{
+	list-style-type: none;
+}
+.addMeetingform>div>span{
+	color: red;
+}
